@@ -11,6 +11,10 @@ for(const asset of configuration.assets){
  if(!/^assets\/[a-z0-9][a-z0-9-]*\.(pdf|webp|png|jpg|svg|mp4)$/.test(asset.path)||!/^[a-f0-9]{64}$/.test(asset.sha256)||!Number.isSafeInteger(asset.bytes)||asset.bytes<1||asset.bytes>20000000) throw new Error('Invalid manifest entry');
  const output=path.resolve(asset.path);
  if(!output.startsWith(destination+path.sep)) throw new Error('Invalid output path');
+ try {
+  const existing=await readFile(output);
+  if(existing.length===asset.bytes&&createHash('sha256').update(existing).digest('hex')===asset.sha256){console.log(`Verified existing ${asset.path}`);continue;}
+ }catch(error){if(error.code!=='ENOENT')throw error;}
  let lastError;
  for(let attempt=0;attempt<3;attempt++){
   try {
