@@ -1,0 +1,110 @@
+{
+  "source": "https://agan0615.github.io/contract-risk-analysis-system/portfolio/",
+  "assets": [
+    {
+      "path": "assets/favicon.svg",
+      "sha256": "a497891d9ab8d814a78b0672fc596f45db836475cf7fa85985749e8a3afff391",
+      "bytes": 235
+    },
+    {
+      "path": "assets/portrait.png",
+      "sha256": "0761ebf143b6cd5c3fdf0613f9741a38c9d01e08f6d078e6705305fba07462b0",
+      "bytes": 74823
+    },
+    {
+      "path": "assets/resume.pdf",
+      "sha256": "2ab5bd65782f1d3d5829e1b95a67cd38ada7dfd44ffd2ff440f08c6232eb598f",
+      "bytes": 433326
+    },
+    {
+      "path": "assets/swiftagent-report.webp",
+      "sha256": "2c83a456cbe95b6ac8531079cc20cc46e1378e550ede9faa5c9323e5b471b7c9",
+      "bytes": 22452
+    },
+    {
+      "path": "assets/digitforce-logo.svg",
+      "sha256": "ee429a2317793f95c49b7ff404960e45091fb18ab25b391a16cd6f0edb1c5984",
+      "bytes": 21859
+    },
+    {
+      "path": "assets/academic-art.webp",
+      "sha256": "a790593c98379e6d038293a7340a024a6f31c2b75afe8f48b4d1bfa5a76f15d1",
+      "bytes": 66490
+    },
+    {
+      "path": "assets/creative-art.webp",
+      "sha256": "9f4b5f19d1f161fbafc5520339eb31cf7a80a3197e0e8308f1afaa76e103b713",
+      "bytes": 56000
+    },
+    {
+      "path": "assets/contract-art.webp",
+      "sha256": "290101c41d5bcd7a73a4a34cbc42c90c0e2409f629381edfb67ba549b2b37001",
+      "bytes": 57204
+    },
+    {
+      "path": "assets/portrait-hd.webp",
+      "sha256": "306951e9cf38af1ea87fa2f66a03d35f5c71d15a4801eb8b0d9fa276544d7903",
+      "bytes": 288036
+    },
+    {
+      "path": "assets/tju-campus-hd.jpg",
+      "sha256": "e2d7fc57ba2974c5518c2a1d5dce7588d5cfab9b44aaf25553adead77443a5c5",
+      "bytes": 389398
+    },
+    {
+      "path": "assets/tju-motto-hd.webp",
+      "sha256": "9ffc66406bb82c1d225cadb723c1ab02c6d08f4d6f687491b66f1e553217ef55",
+      "bytes": 577454
+    },
+    {
+      "path": "assets/tencent-building-hd.jpg",
+      "sha256": "834f488d2354668195945832b4e86cc5999b95af1d63c846b72c60586a127418",
+      "bytes": 187511
+    },
+    {
+      "path": "assets/technical-roadmap.webp",
+      "sha256": "ed41290b864b9a149ea5f3a321a6e7d32eabfe40ec0ab0d96bf83d085c1b529d",
+      "bytes": 1521212
+    },
+    {
+      "path": "assets/technical-roadmap-preview.webp",
+      "sha256": "cbdcac7c248523bf911d3c0b1dbfcb7b69c525bb36ccd61ae0bf055f7529d587",
+      "bytes": 336762
+    },
+    {
+      "path": "assets/contract-system-hd.webp",
+      "sha256": "790e9cf042278ef2a39bce260ad9b95a2ba6890203ad0e2dca2b4a143bb42163",
+      "bytes": 761840
+    },
+    {
+      "path": "assets/report-demo-poster.webp",
+      "sha256": "bf3ae6b915910afbb821513c55dc33ddb8452317241e6b76b4956740a6f59a9a",
+      "bytes": 505888
+    },
+    {
+      "path": "assets/report-scroll-demo.mp4",
+      "sha256": "9c33a4bd1b97320a85a42b780c64a96331bf20cfc75b537a788468f1bb35bd05",
+      "bytes": 12375650
+    },
+    {
+      "path": "assets/cheso-home-hd.webp",
+      "sha256": "8010de116d3a13454f2ea187a549eed6b3af9b16cd5770343c4cb7d20dd8ea7d",
+      "bytes": 316950
+    },
+    {
+      "path": "assets/paper-contract-qa.pdf",
+      "sha256": "2f5aa5671c381f5e18f7bb260523c73dd2d567f9c30fc07328cea5aa3b9f6590",
+      "bytes": 5734450
+    },
+    {
+      "path": "assets/paper-long-contract-analysis.pdf",
+      "sha256": "f2125f9ee5e15bb35fbedf2b792653be69d20862cf8202e90e610d8052e6dabc",
+      "bytes": 2615089
+    },
+    {
+      "path": "assets/paper-interorganizational-trust.pdf",
+      "sha256": "d017e2dd0237f8db53fbdb2ae16c7b526bf9f0bd804439b4c94172c0f8bbeedc",
+      "bytes": 953136
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+name: Import portfolio assets
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/portfolio-assets.json
+      - .github/scripts/import-portfolio-assets.mjs
+      - .github/workflows/portfolio-assets.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: portfolio-asset-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - name: Download and verify portfolio assets
+        run: node .github/scripts/import-portfolio-assets.mjs
+      - name: Commit verified assets
+        run: |
+          git add -- assets
+          if git diff --cached --quiet; then
+            echo "Portfolio assets are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Import verified portfolio assets"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Request Pages rebuild
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds" || echo "Pages rebuild will be requested by the publishing client."
